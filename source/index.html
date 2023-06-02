@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>DL Academy</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet" />
+    <!-- endbuild -->
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main>
+      <section class="banner">
+        <div class="container">
+          <h1 class="banner__title">
+            <span class="banner__title-badge">Lorem ipsum </span> dolor sit ametconsectetur <span class="banner__title-badge">adipiscing</span>
+          </h1>
+          <p class="banner__subtitle">
+            At vero eos et accusamus et iusto odio dignissimos ducimus!
+          </p>
+          <ul class="banner__list">
+            <li class="banner__list-item undotted">
+              <p class="banner__list-text">Totam rem aperiam eaque ipsa</p>
+            </li>
+            <li class="banner__list-item undotted">
+              <p class="banner__list-text">
+                Sit voluptatem accusantium doloremque laudantium
+              </p>
+            </li>
+            <li class="banner__list-item undotted">
+              <p class="banner__list-text">
+                Sed ut perspiciatis, unde omnis iste natus error
+              </p>
+            </li>
+          </ul>
+          <!-- подумать над классами -->
+          <div class="banner__wrapper">
+            <a href="#" class="banner__wrapper-link">заказать</a>
+            <a href="#" class="banner__wrapper-link__details">подробнее</a>
+          </div>
+        </div>
+      </section>
+      <section class="order">
+        <div class="container">
+          <h2 class="order__title">Оформление Заказа</h2>
+          <p class="order__subtitle">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+          </p>
+          <ol class="order__list">
+            <li class="order__list-item undotted">
+              <img src="./img/loupe.png" alt="loupe" class="order__list-img" />
+              <p class="order__list-text">Lorem ipsum dolor sit amet</p>
+            </li>
+            <li class="order__list-item undotted">
+              <img src="./img/percent.png" alt="percent" class="order__list-img" />
+              <p class="order__list-text">Сonsecteturadipiscing elit</p>
+            </li>
+            <li class="order__list-item undotted">
+              <img src="./img/list.png" alt="list" class="order__list-img" />
+              <p class="order__list-text">Sed do eiusmod tempor</p>
+            </li>
+            <li class="order__list-item undotted">
+              <img src="./img/mail.png" alt="mail" class="order__list-img" />
+              <p class="order__list-text">Esse cillum dolore eu fugiat</p>
+            </li>
+            <li class="order__list-item undotted">
+              <img src="./img/bill.png" alt="bill" class="order__list-img" />
+              <p class="order__list-text">
+                Excepteur sint occaecat cupidatat non proident
+              </p>
+            </li>
+          </ol>
+          <form action="" class="order__form">
+            <div class="order__wrapper">
+              <label for="system-select">Тип системы</label>
+              <select name="system" id="system-select">
+                <option value="">Выберите тип системы</option>
+                <option value="petersburg">Sed ut perspiciatis</option>
+                <option value="samara">Nemo enim ipsam</option>
+                <option value="perm">Et harum quidem</option>
+                <option value="novosibirsk">Temporibus autem</option>
+                <option value="novosibirsk">Itaque earum rerum</option>
+              </select>
+              <label for="email"></label>
+              <input type="email" id="email" />
+              <label for="name"></label>
+              <input type="text" id="name" />
+            </div>
+            <div class="order__wrapper">
+              <label for="range"></label>
+              <input type="range" id="range" />
+              <label for="file"></label>
+              <input type="file" id="file" />
+            </div>
+            <button type="submit"></button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <p class="footer__copyright">
+        © 2018 «LoremIpsum.net» Все права защищены.
+      </p>
+      <ul>
+        <li><p>Qiwi wallet</p></li>
+        <li><p>Yandex Money</p></li>
+        <li><p>Web Money</p></li>
+      </ul>
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </footer>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
