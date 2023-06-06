@@ -6,7 +6,7 @@
     <meta name="google" content="notranslate" />
     <meta name="format-detection" content="telephone=no" />
 
-    <title>DL Academy</title>
+    <title>Lorem</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -86,46 +86,38 @@
             </li>
           </ol>
           <form action="" class="order__form">
-            <div class="order__wrapper">
-              <label for="system-select">Тип системы</label>
-              <select name="system" id="system-select">
-                <option value="">Выберите тип системы</option>
-                <option value="petersburg">Sed ut perspiciatis</option>
-                <option value="samara">Nemo enim ipsam</option>
-                <option value="perm">Et harum quidem</option>
-                <option value="novosibirsk">Temporibus autem</option>
-                <option value="novosibirsk">Itaque earum rerum</option>
+            <div class="order__top">
+              <select name="system" id="system-select" class="order__select">
+                <option value="" class="order__option">Выберите тип системы</option>
+                <option value="Sed ut perspiciatis" class="order__option">Sed ut perspiciatis</option>
+                <option value="Nemo enim ipsam" class="order__option">Nemo enim ipsam</option>
+                <option value="Et harum quidem" class="order__option">Et harum quidem</option>
+                <option value="Temporibus autem" class="order__option">Temporibus autem</option>
+                <option value="Itaque earum rerum" class="order__option">Itaque earum rerum</option>
               </select>
-              <label for="email"></label>
-              <input type="email" id="email" />
-              <label for="name"></label>
-              <input type="text" id="name" />
+              <label for="email" class="order__label"></label>
+              <input type="email" id="email" class="order__input" placeholder="Ваш e-mail">
+              <label for="name" class="order__label"></label>
+              <input type="text" id="name" class="order__input" placeholder="Ваше имя">
             </div>
-            <div class="order__wrapper">
-              <label for="range"></label>
-              <input type="range" id="range" />
-              <label for="file"></label>
-              <input type="file" id="file" />
+            <div class="order__bottom">
+              <div class="order__wrapper">
+                <div class="order__wrapper-inner">
+                  <label for="range" class="order__wrapper-label">Sed ut perspiciatis, unde omnis iste natus</label>
+                  <span class="order__wrapper-number number-js">0%</span>
+                </div>
+                <input type="range" id="range" id="range" name="cost" value="0" step="1" min="0" max="100" onchange="update(this)" class="order__wrapper-input range-js">
+              </div>
+              <label for="file" class="order__bottom-label order__bottom-label--add">Прикрепить файл</label>
+              <input type="file" id="file" class="order__bottom-input">
             </div>
-            <button type="submit"></button>
+            <button type="submit" class="order__btn">Отправить</button>
           </form>
         </div>
       </section>
     </main>
-    <footer class="footer container">
-      <p class="footer__copyright">
-        © 2018 «LoremIpsum.net» Все права защищены.
-      </p>
-      <ul>
-        <li><p>Qiwi wallet</p></li>
-        <li><p>Yandex Money</p></li>
-        <li><p>Web Money</p></li>
-      </ul>
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
-    </footer>
+    @@include('blocks/footer.html')
     <script src="js/app.js" defer></script>
+    <script src="js/range.js"></script>
   </body>
 </html>

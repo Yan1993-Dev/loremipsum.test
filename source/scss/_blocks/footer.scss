@@ -1,0 +1,61 @@
+.footer {
+    padding: 30px 0;
+    background: #3D4050;
+    &__inner {
+        display: flex;
+        align-items: center;
+        column-gap: 95px;
+    }
+}
+
+.footer__copyright {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.footer__list {
+    display: flex;
+    column-gap: 16px;
+    &-item{
+        display: flex;
+        align-items: center;
+    }
+    &-img {
+        margin-right: 10px;
+    }
+    &-text {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #C3C3C3;
+    }
+    &-link {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+}
+
+.footer__list-stick {
+    position: relative;
+    &::after {
+        content: "";
+        background-image: url(../img/stone.png);
+        position: absolute;
+        height: 18px;
+        right: -54px;
+        top: -2px;
+        width: 1px;
+    }
+}
